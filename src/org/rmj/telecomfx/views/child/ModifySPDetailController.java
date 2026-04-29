@@ -223,7 +223,7 @@ public class ModifySPDetailController implements Initializable {
                         }
                         txtField.setText(String.valueOf(nQuantity));
                         break;
-                        /*
+                        
                         case 7: //disc rate
                         try {
                         lnValue = Double.parseDouble(lsValue);
@@ -244,7 +244,6 @@ public class ModifySPDetailController implements Initializable {
                         }
                         txtField.setText(CommonUtils.NumberFormat(nAddDiscx, "#,##0.00"));
                         break;
-                        */
                     default:
                 }
             }
