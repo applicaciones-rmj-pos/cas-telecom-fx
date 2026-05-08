@@ -103,6 +103,7 @@ public class Login {
             
             //Footer
             System.setProperty("pos.footer.sDevelopr", po_props.getProperty("pos.footer.sDevelopr"));
+            System.setProperty("pos.footer.sOwnerNme", po_props.getProperty("pos.footer.sOwnerNme"));
             System.setProperty("pos.footer.sAddress1", po_props.getProperty("pos.footer.sAddress1"));
             System.setProperty("pos.footer.sAddress2", po_props.getProperty("pos.footer.sAddress2"));
             System.setProperty("pos.footer.sVATREGTN", po_props.getProperty("pos.footer.sVATREGTN"));

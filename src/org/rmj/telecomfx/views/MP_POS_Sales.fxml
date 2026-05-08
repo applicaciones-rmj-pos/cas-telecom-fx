@@ -394,7 +394,7 @@
                                         </Menu>
                                       </menus>
                                     </MenuBar>
-                                    <Label fx:id="lblField00" alignment="CENTER" prefHeight="39.0" prefWidth="341.0" text="TelecomFX POS System v1.0" textFill="WHITE" GridPane.columnIndex="1">
+                                    <Label fx:id="lblField00" alignment="CENTER" prefHeight="39.0" prefWidth="341.0" text="TelecomFX POS System v2.0" textFill="WHITE" GridPane.columnIndex="1">
                                        <font>
                                           <Font name="System Bold Italic" size="12.0" />
                                        </font>

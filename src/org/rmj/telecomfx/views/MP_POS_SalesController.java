@@ -227,7 +227,7 @@ public class MP_POS_SalesController implements Initializable {
         //set the pos date on system properties
         System.setProperty("pos.clt.date", SQLUtil.dateFormat(poGRider.getServerDate(), SQLUtil.FORMAT_SHORT_DATEX));
         
-        lblField00.setText("TelecomFX POS System v1.0" + lsTranMode);
+        lblField00.setText("TelecomFX POS System v2.0" + lsTranMode);
         lblField01.setText("Accreditation No.: " + System.getProperty("pos.footer.sAccrNmbr"));
         lblField02.setText("Machine No.: " + System.getProperty("pos.clt.crm.no"));
 
@@ -852,7 +852,7 @@ public class MP_POS_SalesController implements Initializable {
                     }
                     
                     if (poTrans.closeTransaction(psOldRec)){
-                        ShowMessageFX.Information(null, pxeModuleName, "Transaction PAYED successfully.");
+                        ShowMessageFX.Information(null, pxeModuleName, "Transaction paid successfully.");
                         clearFields();
                         initGrid();
                         pnEditMode = EditMode.UNKNOWN;
