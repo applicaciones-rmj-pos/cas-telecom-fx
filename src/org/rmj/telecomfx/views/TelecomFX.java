@@ -13,7 +13,7 @@ import javafx.stage.StageStyle;
 import org.rmj.appdriver.GRider;
 
 public class TelecomFX extends Application {
-    public final static String pxeMainFormTitle = "TelecomFx v1.0";
+    public final static String pxeMainFormTitle = "TelecomFx v2.0";
     public final static String pxeMainForm = "MP_POS_Sales.fxml";
     public final static String pxeStageIcon = "org/rmj/telecomfx/images/ic_launcher1.png";
     public static GRider poGRider;

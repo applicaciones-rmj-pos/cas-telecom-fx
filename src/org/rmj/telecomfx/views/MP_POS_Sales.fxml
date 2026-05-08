@@ -70,7 +70,7 @@
                                           <TextArea fx:id="txtAddress" disable="true" prefHeight="58.0" prefWidth="425.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" GridPane.rowSpan="2" />
                                           <CustomTextField fx:id="txtField07" prefHeight="27.0" prefWidth="417.0" promptText="Sales Person(Quick Search)" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4" />
                                           <TextField fx:id="txtField06" prefHeight="17.0" prefWidth="378.0" promptText="Remarks" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5" />
-                                          <TextField fx:id="txtField11" alignment="CENTER_RIGHT" editable="false" prefHeight="27.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                          <TextField fx:id="txtField11" alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
                                           <TextField fx:id="txtField12" alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="208.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
                                           <TextField fx:id="txtField13" alignment="CENTER_RIGHT" disable="true" prefHeight="27.0" prefWidth="202.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
                                           <Label fx:id="lblFreight" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="216.0" text="Freight:" GridPane.columnIndex="1" GridPane.rowIndex="8">
@@ -394,7 +394,7 @@
                                         </Menu>
                                       </menus>
                                     </MenuBar>
-                                    <Label fx:id="lblField00" alignment="CENTER" prefHeight="39.0" prefWidth="341.0" text="TelecomFX POS System v1.0" textFill="WHITE" GridPane.columnIndex="1">
+                                    <Label fx:id="lblField00" alignment="CENTER" prefHeight="39.0" prefWidth="341.0" text="TelecomFX POS System v2.0" textFill="WHITE" GridPane.columnIndex="1">
                                        <font>
                                           <Font name="System Bold Italic" size="12.0" />
                                        </font>

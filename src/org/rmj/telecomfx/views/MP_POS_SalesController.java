@@ -138,7 +138,9 @@ public class MP_POS_SalesController implements Initializable {
     @FXML private Label lblField02;
     @FXML private Label lblField01;
     
-    public static final Image search = new Image("org/rmj/telecomfx/images/search.png");
+    public static final Image search =
+    new Image(MP_POS_SalesController.class
+        .getResourceAsStream("/org/rmj/telecomfx/images/search.png"));
     private final String pxeModuleName = this.getClass().getSimpleName();
     private final String pxeDefaultDte = java.time.LocalDate.now().toString();
     private final String pxeDateFormat = "yyyy-MM-dd";
@@ -225,7 +227,7 @@ public class MP_POS_SalesController implements Initializable {
         //set the pos date on system properties
         System.setProperty("pos.clt.date", SQLUtil.dateFormat(poGRider.getServerDate(), SQLUtil.FORMAT_SHORT_DATEX));
         
-        lblField00.setText("TelecomFX POS System v1.0" + lsTranMode);
+        lblField00.setText("TelecomFX POS System v2.0" + lsTranMode);
         lblField01.setText("Accreditation No.: " + System.getProperty("pos.footer.sAccrNmbr"));
         lblField02.setText("Machine No.: " + System.getProperty("pos.clt.crm.no"));
 
@@ -651,17 +653,17 @@ public class MP_POS_SalesController implements Initializable {
                         /*get the value from the class*/
                         txtField.setText(CommonUtils.xsDateLong((Date)poTrans.getMaster("dTransact")));
                         return;
-//                    case 11:
-//                        try {
-//                            lnValue = Double.parseDouble(lsValue);
-//                        } catch (Exception e) {
-//                            lnValue = 0.0;
-//                        }
-//                        
-//                        poTrans.setMaster("nDiscount", (lnValue > 100 ? 1 : lnValue/100));
-//                        txtField.setText(CommonUtils.NumberFormat(Double.valueOf(poTrans.getMaster("nDiscount").toString())*100, "0.00"));
-//                        loadDetail2Grid();
-//                        break;
+                    case 11:
+                        try {
+                            lnValue = Double.parseDouble(lsValue);
+                        } catch (Exception e) {
+                            lnValue = 0.0;
+                        }
+                        
+                        poTrans.setMaster("nDiscount", (lnValue > 100 ? 1 : lnValue/100));
+                        txtField.setText(CommonUtils.NumberFormat(Double.valueOf(poTrans.getMaster("nDiscount").toString())*100, "0.00"));
+                        loadDetail2Grid();
+                        break;
                         
                     case 12:
                         try {
@@ -850,7 +852,7 @@ public class MP_POS_SalesController implements Initializable {
                     }
                     
                     if (poTrans.closeTransaction(psOldRec)){
-                        ShowMessageFX.Information(null, pxeModuleName, "Transaction PAYED successfully.");
+                        ShowMessageFX.Information(null, pxeModuleName, "Transaction paid successfully.");
                         clearFields();
                         initGrid();
                         pnEditMode = EditMode.UNKNOWN;
